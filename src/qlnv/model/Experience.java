@@ -40,4 +40,10 @@ public class Experience extends Employee{
                 '}';
     }
 
+    @Override
+    public void showInfo() {
+        System.out.println("Expin Years: " + expInYear);
+        System.out.println("Pro Skill: " + proSkill);
+    }
+
 }

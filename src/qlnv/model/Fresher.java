@@ -41,16 +41,7 @@ public class Fresher extends Employee{
 
     @Override
     public void showInfo() {
-        System.out.println("=====Fresher Employee=====");
-        System.out.println("Employee Code: " + empCode);
-        System.out.println("Full Name: " + fullName);
-        System.out.println("Date of Birth: " + doB);
-        System.out.println("Email: " + email);
         System.out.println("Graduation Date: " + graduationDate);
         System.out.println("Graduation Rank: " + graduationRank);
-        System.out.println("Certificates:");
-        for (Certification certificate : empCertificates) {
-            System.out.println("Name: " + certificate.name + ", Rank: " + certificate.rank);
-        }
     }
 }

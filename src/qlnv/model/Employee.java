@@ -81,6 +81,17 @@ public abstract class Employee {
                 '}';
     }
 
-    public void showInfo(){};
+    public void showInfo(){
+        System.out.println("-----Employee-----");
+        System.out.println("Employee Code: " + empCode);
+        System.out.println("Full Name: " + fullName);
+        System.out.println("Date of Birth: " + doB);
+        System.out.println("Email: " + email);
+        System.out.println("Certificates:");
+        for (Certification certificate : empCertificates) {
+            System.out.println("Name: " + certificate.name + ", Rank: " + certificate.rank);
+        }
+
+    };
 }
 

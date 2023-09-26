@@ -7,10 +7,16 @@ import java.util.Scanner;
 
 public class EmployeeManage {
     private ArrayList<Employee> employees;
+    private ArrayList<Experience> experience;
+    private ArrayList<Fresher> fresher;
+    private ArrayList<Intern> intern;
     private Scanner scanner;
 
     public EmployeeManage() {
         employees = new ArrayList<>();
+        experience = new ArrayList<>();
+        fresher = new ArrayList<>();
+        intern = new ArrayList<>();
         scanner = new Scanner(System.in);
     }
 
@@ -72,5 +78,10 @@ public class EmployeeManage {
             employees.add(intern);
         }
 
+    }
+    public void showEmployee(){
+        for(Employee employee:employees){
+            employee.showInfo();
+        }
     }
 }

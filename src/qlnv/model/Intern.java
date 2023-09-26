@@ -52,13 +52,9 @@ public class Intern extends Employee {
     }
     @Override
     public void showInfo() {
-        System.out.println("=====Intern Employee=====");
-        System.out.println("Employee Code: " +empCode);
-        System.out.println("Full Name: " +fullName);
-        System.out.println("Date of Birth: " +doB);
-        System.out.println("Email: " +email);
         System.out.println("Majors: " +majors);
         System.out.println("Semester: " +semester);
         System.out.println("University Name: "+universityName);
+        System.out.println("Certificates:");
     }
 }
